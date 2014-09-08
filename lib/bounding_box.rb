@@ -19,9 +19,6 @@ class BoundingBox
   end
 
   def contains_point?(x_coord, y_coord)
-    if x_coord.between?(left, right) && y_coord.between?(bottom, top)
-      return true
-    end
-    false
+    x_coord.between?(left, right) && y_coord.between?(bottom, top)
   end
 end
